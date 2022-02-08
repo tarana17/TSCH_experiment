@@ -139,7 +139,8 @@ const default_config = {
     MAC_START_JOINED: false,
 
     /* Max number of re-transmissions */
-    MAC_MAX_RETRIES: 7,
+    // MAC_MAX_RETRIES: 7,
+    MAC_MAX_RETRIES: 0,
 
     /* The maximum number of outgoing packets towards each neighbor */
     MAC_QUEUE_SIZE: 16,
@@ -207,7 +208,7 @@ const default_config = {
     /* Size excluding IP and MAC headers */
     APP_PACKET_SIZE: 100,
     /* Data packets are generated once this period */
-    APP_PACKET_PERIOD_SEC: 60,
+    APP_PACKET_PERIOD_SEC: 40,
     /* Data packets are not generated before this warm-up period has expired */
     APP_WARMUP_PERIOD_SEC: 100,
     /* If set to true, data packets are generated even if the node is not connected to a network */

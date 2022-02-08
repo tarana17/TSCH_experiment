@@ -32,8 +32,10 @@ function read_schedule(node) {
     try {
         // Specify the path for the schedule.json file
         // NOTE: PLEASE CHANGE THIS PATH BASED ON LOCATION OF THE EXAMPLE
-    //    const schedule_file = "examples/hierarchical_node_13/schedule.json";
-        const schedule_file = "examples/twoNodeExmp/schedule.json";
+        const schedule_file = "examples/13_node_Exp/schedule.json";
+        // const schedule_file = "examples/twoNodeExmp/schedule.json";
+        // const schedule_file = "examples/twoNodeLogloss/schedule.json";
+        // const schedule_file = "examples/mesh/schedule.json";
         // const schedule_file = "examples/exampleTegveer/schedule.json";
         schedule_file_data = fs.readFileSync(schedule_file);    
         if (schedule_file_data) {
@@ -171,7 +173,7 @@ export function initialize()
     // Add the length of the slotframe
     const default_config = {
         /* The length of the leaf-and-forwarder slotframe */
-        TSCH_SCHEDULE_CONF_DEFAULT_LENGTH: 3
+        TSCH_SCHEDULE_CONF_DEFAULT_LENGTH: 15
     };
 
     for (const key in default_config) {

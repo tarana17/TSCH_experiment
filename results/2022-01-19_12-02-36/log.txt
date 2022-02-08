@@ -1,0 +1,72 @@
+asn=0    	id=-1  	Main	copying configuration file E:\test-projects\TSCH_experiment\examples\mesh\config.json to output directory E:\test-projects\TSCH_experiment\results\2022-01-19_12-02-36\config.json[MAIN]
+asn=0    	id=-1  	Main	initializing 600 seconds long simulation...[SIMULATOR]
+asn=0    	id=-1  	TSCH	initializing leaf-and-forwarder scheduler [SCHEDULER_NEW]
+asn=0    	id=-1  	Main	creating 10 "node" nodes...[SIMULATOR]
+asn=0    	id=-1  	Main	generating a mesh network with 10 nodes and 5 degrees
+asn=0    	id=-1  	Main	initialized, net.degrees=0.8 range=[4.5,5.5]
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=0.8
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=0.6
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=1.4
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=1.2
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=0.6
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=1.2
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=1.2
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=1.4
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=0.8
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=2
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=1.2
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=1.8
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=2.2
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=1.4
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=1.6
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=2.4
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=3
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=1.6
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=3
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=1.8
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=1.6
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=2.2
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=3.2
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=2.2
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=2.4
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=2.6
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=3
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=3
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=3.2
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=3
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=3.4
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=3.2
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=2.2
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=3.4
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=4.2
+asn=0    	id=-1  	Main	decrease degrees, current net.degrees=6.4 area_multiplier=0.35538339780838696
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=4.4
+asn=0    	id=-1  	Main	increase degrees, current net.degrees=4.4
+asn=0    	id=-1  	Main	decrease degrees, current net.degrees=6 area_multiplier=0.34503242505668635
+asn=0    	id=1   	Main	set position x=0.00 y=0.00[SIMULATOR]
+asn=0    	id=2   	Main	set position x=7.51 y=-0.88[SIMULATOR]
+asn=0    	id=3   	Main	set position x=127.30 y=6.91[SIMULATOR]
+asn=0    	id=4   	Main	set position x=1.63 y=158.22[SIMULATOR]
+asn=0    	id=5   	Main	set position x=-104.71 y=-71.32[SIMULATOR]
+asn=0    	id=6   	Main	set position x=-145.33 y=76.11[SIMULATOR]
+asn=0    	id=7   	Main	set position x=59.73 y=-127.79[SIMULATOR]
+asn=0    	id=8   	Main	set position x=26.15 y=-36.13[SIMULATOR]
+asn=0    	id=9   	Main	set position x=-31.66 y=108.02[SIMULATOR]
+asn=0    	id=10  	Main	set position x=-49.99 y=74.12[SIMULATOR]
+asn=0    	id=-1  	App	new packet source, from=2 for=1 period=10 warmup=100 [PACKET_SOURCE]
+asn=0    	id=-1  	App	new packet source, from=3 for=1 period=10 warmup=100 [PACKET_SOURCE]
+asn=0    	id=-1  	App	new packet source, from=4 for=1 period=10 warmup=100 [PACKET_SOURCE]
+asn=0    	id=-1  	App	new packet source, from=5 for=1 period=10 warmup=100 [PACKET_SOURCE]
+asn=0    	id=-1  	App	new packet source, from=6 for=1 period=10 warmup=100 [PACKET_SOURCE]
+asn=0    	id=-1  	App	new packet source, from=7 for=1 period=10 warmup=100 [PACKET_SOURCE]
+asn=0    	id=-1  	App	new packet source, from=8 for=1 period=10 warmup=100 [PACKET_SOURCE]
+asn=0    	id=-1  	App	new packet source, from=9 for=1 period=10 warmup=100 [PACKET_SOURCE]
+asn=0    	id=-1  	App	new packet source, from=10 for=1 period=10 warmup=100 [PACKET_SOURCE]
+asn=0    	id=-1  	Main	simulation created[SIMULATOR]
+asn=0    	id=-1  	Main	starting simulation main loop...[SIMULATOR]
+asn=0    	id=1   	TSCH	error: Failed to find Schedule file [SCHEDULER NEW]
+asn=0    	id=1   	TSCH	Schedule File loaded into struct successfully [SCHEDULER NEW]
+asn=0    	id=1   	TSCH	*** initializing leaf-and-forwarder scheduler, slotframe_size=3 [SCHEDULER NEW]
+asn=0    	id=1   	Node	Slotframe number 1 added from node: 1 [NODE]
+asn=0    	id=1   	Node	Add cell in timeslot: 0 channel offset: 0 in slotframe: 1
+asn=0    	id=1   	TSCH	about to add cells at channel offset=2 called by node 1 [SCHEDULER NEW]

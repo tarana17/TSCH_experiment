@@ -552,11 +552,12 @@ export function initialize()
         TX_POWER_DBM: 0, /* output power in dBm, for UDGM, LogLoss and PisterHack models */
 
         // LOGLOSS_TRANSMIT_RANGE_M: 200.0, /* in meters */
-        LOGLOSS_TRANSMIT_RANGE_M: 0.0, /* in meters */
+        LOGLOSS_TRANSMIT_RANGE_M: 250.0, /* in meters */
 
 
         /* The maximal signal strength in dBm when the PRR is approximately 0% */
-        LOGLOSS_RX_SENSITIVITY_DBM: -100,
+        // LOGLOSS_RX_SENSITIVITY_DBM: -100,
+        LOGLOSS_RX_SENSITIVITY_DBM: -70,
         /*
          * This is the inflection point of the logistic loss function, i.e. where the second-order derivative becomes negative.
          * It is also the point where 50% of packets with this signal strength are received.
@@ -567,7 +568,7 @@ export function initialize()
         LOGLOSS_PATH_LOSS_EXPONENT: 3.0,
 
         /*....................... For the Unit Disk Graph Model...................................... */
-        UDGM_TRANSMIT_RANGE_M: 213.0, /* in meters */
+        UDGM_TRANSMIT_RANGE_M: 95.0, /* in meters */
         UDGM_RX_SUCCESS: 1.0,
         UDGM_CONSTANT_LOSS: false, /* dependent on distance? */
 

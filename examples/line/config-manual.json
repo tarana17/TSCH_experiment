@@ -1,6 +1,7 @@
 {
     "SIMULATION_DURATION_SEC": 1200,
     "NODE_TYPES": [
+        
         {
             "NAME": "node",
             "START_ID": 1,

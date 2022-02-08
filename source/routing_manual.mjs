@@ -36,8 +36,10 @@ export class NewRouting
         try {
             // Specify the path for the routes.json file
             // NOTE: PLEASE CHANGE THIS PATH BASED ON LOCATION OF THE EXAMPLE
-            // const route_file = "examples/hierarchical_node_13/routes.json";
-            const route_file = "examples/twoNodeExmp/routes.json";
+            const route_file = "examples/13_node_Exp/routes.json";
+            // const route_file = "examples/twoNodeExmp/routes.json";
+            // const route_file = "examples/twoNodeLogloss/routes.json";
+            // const route_file = "examples/mesh/routes.json";
            
             route_file_data = fs.readFileSync(route_file);    
             if (route_file_data) {

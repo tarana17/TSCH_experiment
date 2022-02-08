@@ -1,0 +1,31 @@
+{
+    "SIMULATION_DURATION_SEC": 1200,
+    "ROUTING_ALGORITHM": "ManualRouting",
+    "SCHEDULING_ALGORITHM": "NewScheduler", 
+    "NODE_TYPES": [
+        {
+            "NAME": "root",
+            "START_ID": 1,
+            "COUNT": 1,
+            "CONNECTIONS": [{"NODE_TYPE": "leaf", "LINK_MODEL": "UDGM"}]
+        },
+        {
+            "NAME": "leaf",
+            "START_ID": 2,
+            "COUNT": 3,
+            "ROUTING_IS_LEAF": true,
+            "CONNECTIONS": [{"NODE_TYPE": "root", "LINK_MODEL": "UDGM"}],
+            "APP_PACKETS": {"APP_PACKET_PERIOD_SEC": 10, "TO_ID": 1}
+        }
+    ],
+  
+
+   
+   "POSITIONS": [
+    {"ID": 1, "X": 200, "Y": 250},
+    {"ID": 2, "X": 115, "Y": 210},
+    {"ID": 3, "X": 115, "Y": 200},
+    {"ID": 4, "X": 117, "Y": 195}
+    ]
+}   
+ 
