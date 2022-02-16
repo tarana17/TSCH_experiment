@@ -139,7 +139,7 @@ function is_valid_node_id(network, node_id)
 
 
 /* ------------------------------------- */
-
+// code for filling position from POSITIONS VALUE SET MANUALLY
 function parse_position(network, position)
 {
     const node_id = position.ID;
@@ -164,13 +164,18 @@ function parse_position(network, position)
                 node.pos_y = 0;
             }
         }
-    } else {
+        log.log(log.INFO, null, "Main", `position specified for node ID=${node_id}, X= ${node.pos_x}, Y =${node.pos_y} [SIMULATOR]`); 
+
+    }
+     else {
         log.log(log.WARNING, null, "Main", `position specified for unknown node ID=${node_id}[SIMULATOR]`);
     }
+   
 }
 
 /* ------------------------------------- */
 //................................................. Starting of the SIMULATOR......................................
+//line 174 to 549
 export function construct_simulation(is_from_web)
 {
     /* init time first */
@@ -250,15 +255,15 @@ export function construct_simulation(is_from_web)
             log.log(log.WARNING, null, "Main", `invalid node type "${node_type.NAME}"[SIMULATOR]`);
             continue;
         }
-
-        log.log(log.INFO, null, "Main", `creating ${node_type.COUNT} "${node_type.NAME}" nodes...[SIMULATOR]`);
+       // log.log(log.INFO, null, "Main", `printing value of node_type ${node_type} from simulator.mjs[SIMULATOR]`);
+        log.log(log.INFO, null, "Main", `creating ${node_type.COUNT} "${node_type.NAME}" type nodes ...[SIMULATOR]`);
 
         /* set the default config and override it with type-specific values */
         const type_config = JSON.parse(JSON.stringify(config));
         // Display all Keys in the NODE TYPE
-        //log.log(log.INFO, this, "Node", `Keys for Node Type ${node_type.NAME}`);
+        log.log(log.INFO, this, "Node", `Keys for Node Type ${node_type.NAME}`);
         for (let key in node_type) {
-            //log.log(log.INFO, this, "Node", `Key: ${key}`)
+            log.log(log.INFO, this, "Node", `Key: ${key}`)
             type_config[key] = node_type[key];
         }
 
@@ -270,7 +275,9 @@ export function construct_simulation(is_from_web)
             // Add node to the network after determining its type
             net.add_node(id, type_config);
             type_ids[node_type.NAME].push(id);
+            log.log(log.INFO, this, "Main", `Adding Node_ID: "${id}" to the Network  [SIMULATOR]`);
             id += 1;
+            
         }
 
         if (!net.mobility_model && type_config.MOBILITY_MODEL && type_config.MOBILITY_MODEL !== "Static") {
@@ -309,7 +316,7 @@ export function construct_simulation(is_from_web)
             }
         }
     }
-
+    // setting Global position of each node
     if (utils.has_nonempty_array(config, "POSITIONS")) {
         /* Global positions */
         positions_set_manually = true;
@@ -331,7 +338,7 @@ export function construct_simulation(is_from_web)
             }
         }
     }
-
+ // 341 - 349 NA
     if (!nodes_set_manually) {
         /* Generate default some packet sources for a data collection application */
         for (let i = 2; i <= net.nodes.size; ++i) {
@@ -351,6 +358,7 @@ export function construct_simulation(is_from_web)
         if (utils.has_nonempty_array(from_node_type, "CONNECTIONS")) {
             
             connections_set_manually = true;
+            // connections_set_manually = false;
             types_with_connections_out[from_node_type.NAME] = true;
 
             if (config.TRACE_FILE) {

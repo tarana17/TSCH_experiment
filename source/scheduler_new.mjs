@@ -22,7 +22,7 @@ function set_timings()
     }
 
     // MAC_SLOT_DURATION is in microseconds, convert them to seconds using the map method
-    time.timeline.slot_timings = timings_usec.map(x => x / 1000000); /* convert to seconds */
+    time.timeline.slot_timings = timings_usec.map(x => x / 1000000); /* convert to seconds */ // 0.01sec= 10 milisec
 }
 
 function read_schedule(node) {
@@ -32,10 +32,10 @@ function read_schedule(node) {
     try {
         // Specify the path for the schedule.json file
         // NOTE: PLEASE CHANGE THIS PATH BASED ON LOCATION OF THE EXAMPLE
-        const schedule_file = "examples/13_node_Exp/schedule.json";
+        // const schedule_file = "my_experiment/two_node_experiment/schedule.json";
         // const schedule_file = "examples/twoNodeExmp/schedule.json";
         // const schedule_file = "examples/twoNodeLogloss/schedule.json";
-        // const schedule_file = "examples/mesh/schedule.json";
+        const schedule_file = "my_experiment/13NodeExp/schedule.json";
         // const schedule_file = "examples/exampleTegveer/schedule.json";
         schedule_file_data = fs.readFileSync(schedule_file);    
         if (schedule_file_data) {
@@ -174,6 +174,7 @@ export function initialize()
     const default_config = {
         /* The length of the leaf-and-forwarder slotframe */
         TSCH_SCHEDULE_CONF_DEFAULT_LENGTH: 15
+        // so this value will be added to defalut_config object which is declared in config.mjs
     };
 
     for (const key in default_config) {

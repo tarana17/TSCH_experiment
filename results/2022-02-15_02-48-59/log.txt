@@ -1,0 +1,8 @@
+asn=0    	id=-1  	Main	copying configuration file E:\test-projects\TSCH_experiment\my_experiment\twoNodeExmp\config.json to output directory E:\test-projects\TSCH_experiment\results\2022-02-15_02-48-59\config.json[MAIN]
+asn=0    	id=-1  	Main	initializing 600 seconds long simulation...[SIMULATOR]
+asn=0    	id=-1  	TSCH	Setting the communication Range(UDGM/pathloss/pister) [link_model]
+asn=0    	id=-1  	TSCH	calling  Manual Routing [Routing_Manual]
+asn=0    	id=-1  	TSCH	initializing leaf-and-forwarder scheduler [SCHEDULER_NEW]
+asn=0    	id=-1  	Main	creating 2 "node" nodes...[SIMULATOR]
+asn=0    	id=-1  	Main	Adding Start_ID: 1 to Array type_ids1[SIMULATOR]
+asn=0    	id=-1  	Main	Adding Start_ID: 2 to Array type_ids1,2[SIMULATOR]

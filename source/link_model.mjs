@@ -564,11 +564,12 @@ export function initialize()
          */
         LOGLOSS_RSSI_INFLECTION_POINT_DBM: -96,
 
+        
         /* For the log-distance model, indoors, 2.4 GHz */
         LOGLOSS_PATH_LOSS_EXPONENT: 3.0,
 
         /*....................... For the Unit Disk Graph Model...................................... */
-        UDGM_TRANSMIT_RANGE_M: 95.0, /* in meters */
+        UDGM_TRANSMIT_RANGE_M: 40.0, /* in meters */
         UDGM_RX_SUCCESS: 1.0,
         UDGM_CONSTANT_LOSS: false, /* dependent on distance? */
 
@@ -589,4 +590,5 @@ export function initialize()
     if (config.TRACE_FILE) {
         trace_manager.load_trace_file(config.TRACE_FILE);
     }
+    log.log(log.INFO, null, "TSCH", `Setting the communication Range(UDGM/pathloss/pister) [link_model]`);
 }

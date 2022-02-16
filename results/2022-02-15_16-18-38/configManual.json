@@ -1,0 +1,29 @@
+{
+    "SIMULATION_DURATION_SEC": 1200,
+    "ROUTING_ALGORITHM": "ManualRouting",
+    "SCHEDULING_ALGORITHM": "NewScheduler", 
+    "NODE_TYPES": [
+        {
+            "NAME": "node",
+            "START_ID": 1,
+            "COUNT": 1
+        },
+        {
+            "NAME": "node",
+            "START_ID": 2,
+            "COUNT": 3,
+            "APP_PACKETS": {"APP_PACKET_PERIOD_SEC": 40, "TO_ID": 1},
+            "CONNECTIONS": [{"NODE_TYPE": "node", "LINK_MODEL": "UDGM"}]
+        }
+      
+    ],
+  
+
+   "POSITIONS": [
+    {"ID": 1, "X": 20, "Y":25},
+    {"ID": 2, "X": 22.5, "Y": 22},
+    {"ID": 3, "X": 17.5, "Y": 22},
+    {"ID": 4, "X": 17, "Y": 27}
+    ]
+}   
+ 

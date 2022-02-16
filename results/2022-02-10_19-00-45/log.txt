@@ -1,0 +1,13 @@
+asn=0    	id=-1  	Main	copying configuration file E:\test-projects\TSCH_experiment\my_experiment\twoNodeExmp\config.json to output directory E:\test-projects\TSCH_experiment\results\2022-02-10_19-00-45\config.json[MAIN]
+asn=0    	id=-1  	Main	initializing 600 seconds long simulation...[SIMULATOR]
+asn=0    	id=-1  	TSCH	initializing leaf-and-forwarder scheduler [SCHEDULER_NEW]
+asn=0    	id=-1  	Main	creating 2 "node" nodes...[SIMULATOR]
+asn=0    	id=-1  	App	new packet source, from=2 for=1 period=10 warmup=100 [PACKET_SOURCE]
+asn=0    	id=-1  	Main	simulation created[SIMULATOR]
+asn=0    	id=-1  	Main	starting simulation main loop...[SIMULATOR]
+asn=0    	id=1   	TSCH	error: Failed to find Schedule file [SCHEDULER NEW]
+asn=0    	id=1   	TSCH	Schedule File loaded into struct successfully [SCHEDULER NEW]
+asn=0    	id=1   	TSCH	*** initializing leaf-and-forwarder scheduler, slotframe_size=15 [SCHEDULER NEW]
+asn=0    	id=1   	Node	Slotframe number 1 added from node: 1 [NODE]
+asn=0    	id=1   	Node	Add cell in timeslot: 0 channel offset: 0 in slotframe: 1
+asn=0    	id=1   	TSCH	about to add cells at channel offset=2 called by node 1 [SCHEDULER NEW]

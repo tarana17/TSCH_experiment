@@ -92,7 +92,7 @@ const default_config = {
     /* ------------------------------------- */
 
     /* The total duraction of the simulation, seconds */
-    SIMULATION_DURATION_SEC: 600,
+    SIMULATION_DURATION_SEC: 1200,
 
     /* Random seed */
     SIMULATION_SEED: 0,
@@ -149,7 +149,7 @@ const default_config = {
     MAC_MAX_SUBSLOTS: 1,
 
     /* TSCH slot duration in microseconds */
-    MAC_SLOT_DURATION_US: 10000,
+    MAC_SLOT_DURATION_US: 10000, // which is 10 in milisecond
 
     /* Max acceptable join priority */
     MAC_MAX_JOIN_PRIORITY: 32,
@@ -210,7 +210,7 @@ const default_config = {
     /* Data packets are generated once this period */
     APP_PACKET_PERIOD_SEC: 40,
     /* Data packets are not generated before this warm-up period has expired */
-    APP_WARMUP_PERIOD_SEC: 100,
+    APP_WARMUP_PERIOD_SEC: 0,
     /* If set to true, data packets are generated even if the node is not connected to a network */
     APP_PACKETS_GENERATE_ALWAYS: false,
 

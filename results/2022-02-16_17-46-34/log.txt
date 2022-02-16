@@ -1,0 +1,1 @@
+asn=0    	id=-1  	Main	copying configuration file E:\test-projects\TSCH_experiment\my to output directory E:\test-projects\TSCH_experiment\results\2022-02-16_17-46-34\my[MAIN]

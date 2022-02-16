@@ -1,0 +1,1 @@
+asn=0    	id=-1  	Main	copying configuration file E:\test-projects\TSCH_experiment\my_experiment\two_node_experiment\config.json to output directory E:\test-projects\TSCH_experiment\results\2022-02-10_18-37-17\config.json[MAIN]

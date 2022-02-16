@@ -1,0 +1,37 @@
+asn=0    	id=-1  	Main	copying configuration file E:\test-projects\TSCH_experiment\my_experiment\13NodeExp\configManual.json to output directory E:\test-projects\TSCH_experiment\results\2022-02-15_19-57-46\configManual.json[MAIN]
+asn=0    	id=-1  	Main	initializing 1200 seconds long simulation...[SIMULATOR]
+asn=0    	id=-1  	TSCH	Setting the communication Range(UDGM/pathloss/pister) [link_model]
+asn=0    	id=-1  	TSCH	calling  Manual Routing [Routing_Manual]
+asn=0    	id=-1  	TSCH	initializing leaf-and-forwarder scheduler [SCHEDULER_NEW]
+asn=0    	id=-1  	Main	creating 1 "node" type nodes ...[SIMULATOR]
+asn=0    	id=-1  	Node	Keys for Node Type node
+asn=0    	id=-1  	Node	Key: NAME
+asn=0    	id=-1  	Node	Key: START_ID
+asn=0    	id=-1  	Node	Key: COUNT
+asn=0    	id=-1  	Node	Key: CONNECTIONS
+asn=0    	id=-1  	Main	Adding Node_ID: "1" to the Network  [SIMULATOR]
+asn=0    	id=-1  	Main	creating 3 "node" type nodes ...[SIMULATOR]
+asn=0    	id=-1  	Node	Keys for Node Type node
+asn=0    	id=-1  	Node	Key: NAME
+asn=0    	id=-1  	Node	Key: START_ID
+asn=0    	id=-1  	Node	Key: COUNT
+asn=0    	id=-1  	Node	Key: CONNECTIONS
+asn=0    	id=-1  	Node	Key: APP_PACKETS
+asn=0    	id=-1  	Main	Adding Node_ID: "2" to the Network  [SIMULATOR]
+asn=0    	id=-1  	Main	Adding Node_ID: "3" to the Network  [SIMULATOR]
+asn=0    	id=-1  	Main	Adding Node_ID: "4" to the Network  [SIMULATOR]
+asn=0    	id=-1  	Main	position specified for node ID=1, X= 20, Y =25 [SIMULATOR]
+asn=0    	id=-1  	Main	position specified for node ID=2, X= 22, Y =22 [SIMULATOR]
+asn=0    	id=-1  	Main	position specified for node ID=3, X= 17, Y =22 [SIMULATOR]
+asn=0    	id=-1  	Main	position specified for node ID=4, X= 17, Y =27 [SIMULATOR]
+asn=0    	id=-1  	Main	error: assertion failed: link from 2 to 3 already present[NETWORK]
+asn=0    	id=-1  	Main	error: Error: stack trace
+asn=0    	id=-1  	Main	error:     at Module.assert (file:///E:/test-projects/TSCH_experiment/source/utils.mjs:98:23)
+asn=0    	id=-1  	Main	error:     at Network.add_link (file:///E:/test-projects/TSCH_experiment/source/network.mjs:121:15)
+asn=0    	id=-1  	Main	error:     at construct_simulation (file:///E:/test-projects/TSCH_experiment/source/simulator.mjs:386:33)
+asn=0    	id=-1  	Main	error:     at Module.run_single (file:///E:/test-projects/TSCH_experiment/source/simulator.mjs:795:19)
+asn=0    	id=-1  	Main	error:     at main (file:///E:/test-projects/TSCH_experiment/source/main.mjs:153:15)
+asn=0    	id=-1  	Main	error:     at file:///E:/test-projects/TSCH_experiment/source/main.mjs:191:1
+asn=0    	id=-1  	Main	error:     at ModuleJob.run (internal/modules/esm/module_job.js:152:23)
+asn=0    	id=-1  	Main	error:     at async Loader.import (internal/modules/esm/loader.js:166:24)
+asn=0    	id=-1  	Main	error:     at async Object.loadESM (internal/process/esm_loader.js:68:5)

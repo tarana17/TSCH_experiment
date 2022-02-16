@@ -8,14 +8,16 @@ import * as log from './log.mjs';
 export function initialize(network)
 {
     const default_config = {
+       //fake value; SIMULATION_DURATION_SEC: 1600
     };
 
     for (const key in default_config) {
         /* set the ones that have not been set from the config file */    
-        if (!config.hasOwnProperty(key)) {
-            config[key] = default_config[key];
+        if (!config.hasOwnProperty(key)) {  // here config means default-config of config.mjs
+            config[key] = default_config[key]; // here defalt_config[key] means value 
         }
     }
+    log.log(log.INFO, null, "TSCH", `calling  Manual Routing [Routing_Manual]`);
 }
 
 /*---------------------------------------------------------------------------*/
@@ -36,10 +38,11 @@ export class NewRouting
         try {
             // Specify the path for the routes.json file
             // NOTE: PLEASE CHANGE THIS PATH BASED ON LOCATION OF THE EXAMPLE
-            const route_file = "examples/13_node_Exp/routes.json";
+            // const route_file = "my_experiment/two_node_experiment/routes.json";
             // const route_file = "examples/twoNodeExmp/routes.json";
             // const route_file = "examples/twoNodeLogloss/routes.json";
-            // const route_file = "examples/mesh/routes.json";
+            // const route_file = "examples/exampleTegveer/routes.json";
+            const route_file = "my_experiment/13NodeExp/routes.json";
            
             route_file_data = fs.readFileSync(route_file);    
             if (route_file_data) {
